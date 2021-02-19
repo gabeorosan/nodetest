@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Pamela Orosan-Weine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<link rel="stylesheet" href="../css/contact.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="icon" href="../img/cookie.svg" type="image/icon">
+    <link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+	</head>
+	<body>
+		
+    <header id="header">
+			<img src="../img/Logo1.svg" class="logo noselect" alt="">
+			<nav>
+				<ul class="links">
+					<li><a class="navlink" id="home" href="./home.html">Home</a></li>
+					<li><a class="navlink" id = "about" href="./about.html">About</a></li>
+					
+					
+					<li><a class="navlink" id = "contact" href="./contact.html">Contact</a></li>
+					<li id="services">Services
+						<ul class="dropdown">
+							<li><a class="droplink" id="anorexia" href="./anorexia.html">Anorexia</a></li>
+							<li><a class="droplink" href="./bulimia.html">Bulimia</a></li>
+							<li><a class="droplink" href="./binge-eating.html">Binge Eating</a></li>
+							<li><a class="droplink" href="./support.html">Support</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section id="hero">
+			<div class="container">
+        <div class="title" >
+          <h1>
+              Contact Me
+          </h1>
+        </div>
+        <div class="contact-container">
+          <form action="{% url 'contact' %}" method="post" class="contact-form">
+            
+            <div class="col-sm-6">
+              <div class="input-block">
+                <input type="text" name="name" class="form-control" placeholder="Name">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="input-block">
+                <input type="text" name="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="input-block">
+                <input type="text" name="phone" class="form-control" placeholder="Phone">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="input-block textarea">
+                <textarea rows="3" type="text" name="message" class="form-control" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="send-container">
+              <button class="send-button">Send</button>
+            </div>
+          </form>
+        </div>
+          
+          <p>
+          My office is located at 2350 Washtenaw Avenue, Suite #2, Ann Arbor, Michigan 48104.
+          <br><br>
+          *Due to Covid, <strong> all appointments are being conducted virtually</strong>
+          </p>
+      </div>
+			
+		</section>
+
+		<footer>
+			<div class="footer-container">
+				<div class="back-to-top">
+					<a href="#hero"><i class="fas fa-chevron-up"></i></a>
+				</div>
+				<div class="footer-content">
+					<div class="footer-content-about animate-top">
+						<h4>About Me</h4>
+						<p>
+							I am a licensed clinical psychologist specializing in mood and eating disorders, and I have a private practice in Ann Arbor, Michigan. I have practiced for over 25 years as a therapist, and worked as an intern and fellow at Harvard Medical School and Beth Israel Hospital.
+						</p>
+					</div>
+					<div class="animate-bottom social-container">
+						<div class="social-media">
+							<h4>Follow Me</h4>
+								<ul class="social-icons">
+									<li>
+										<a href="https://twitter.com/pamorosanweine"><i class="fab fa-twitter"></i></a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/pamelaorosanweinephd"><i class="fab fa-facebook-square"></i></a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/pamelaorosanweinephd"><i class="fab fa-linkedin"></i></a>
+									</li>
+									
+								</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../js/script.js"></script>
+
+	</body>
+</html>
+
+    

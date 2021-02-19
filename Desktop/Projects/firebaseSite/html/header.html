@@ -1,0 +1,26 @@
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'website/css/header.css' %}" />
+</head>
+
+<header id="header">
+    <img src="{% static 'website/img/Logo1.svg' %}" class="logo noselect" alt="">
+    <nav>
+        <ul class="links">
+            <li><a class="navlink" id="home" href="{% url 'home' %}">Home</a></li>
+            <li><a class="navlink" id = "about" href="{% url 'about' %}">About</a></li>
+            
+            
+            <li><a class="navlink" id = "contact" href="{% url 'contact' %}">Contact</a></li>
+            <li id="services">Services
+                <ul class="dropdown">
+                    <li><a class="droplink" id="anorexia" href="{% url 'anorexia' %}">Anorexia</a></li>
+                    <li><a class="droplink" href="{% url 'bulimia' %}">Bulimia</a></li>
+                    <li><a class="droplink" href="{% url 'bingeeating' %}">Binge Eating</a></li>
+                    <li><a class="droplink" href="{% url 'support' %}">Support</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
